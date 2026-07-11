@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaintainIQ - Asset Details</title>
+
+    <link rel="stylesheet" href="asset.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <h2>MaintainIQ</h2>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="report.html">Report Issue</a>
+
+        <a href="history.html">History</a>
+
+    </nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+    <div class="heroText">
+
+        <h1>Asset Information</h1>
+
+        <p>
+            Scan the QR code to view complete maintenance details,
+            service history, and report new issues.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Asset Card -->
+
+<section class="assetContainer">
+
+    <div class="assetCard">
+
+        <div class="assetHeader">
+
+            <h2 id="assetName">Air Conditioner</h2>
+
+            <span class="status working">
+                Working
+            </span>
+
+        </div>
+
+        <div class="details">
+
+            <div class="item">
+                <h4>Asset ID</h4>
+                <p id="assetId">AC-204</p>
+            </div>
+
+            <div class="item">
+                <h4>Location</h4>
+                <p>2nd Floor - Block A</p>
+            </div>
+
+            <div class="item">
+                <h4>Department</h4>
+                <p>Administration</p>
+            </div>
+
+            <div class="item">
+                <h4>Installed Date</h4>
+                <p>12 January 2024</p>
+            </div>
+
+            <div class="item">
+                <h4>Last Service</h4>
+                <p>15 June 2026</p>
+            </div>
+
+            <div class="item">
+                <h4>Next Service</h4>
+                <p>15 September 2026</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="stats">
+
+    <div class="box">
+
+        <h2 id="repairs">04</h2>
+
+        <p>Total Repairs</p>
+
+    </div>
+
+    <div class="box">
+
+        <h2>98%</h2>
+
+        <p>Health Score</p>
+
+    </div>
+
+    <div class="box">
+
+        <h2>03</h2>
+
+        <p>Pending Requests</p>
+
+    </div>
+
+    <div class="box">
+
+        <h2>15 Days</h2>
+
+        <p>Next Inspection</p>
+
+    </div>
+
+</section>
+
+<!-- Timeline -->
+
+<section class="timeline">
+
+    <h2>Maintenance Timeline</h2>
+
+    <div class="timelineItem">
+
+        <span>✔</span>
+
+        <div>
+
+            <h3>15 June 2026</h3>
+
+            <p>Gas Refilled & Filter Cleaned</p>
+
+        </div>
+
+    </div>
+
+    <div class="timelineItem">
+
+        <span>✔</span>
+
+        <div>
+
+            <h3>05 February 2026</h3>
+
+            <p>Motor Replaced</p>
+
+        </div>
+
+    </div>
+
+    <div class="timelineItem">
+
+        <span>✔</span>
+
+        <div>
+
+            <h3>12 January 2026</h3>
+
+            <p>Routine Inspection Completed</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- AI Recommendation -->
+
+<section class="recommendation">
+
+    <h2>🤖 AI Preventive Recommendation</h2>
+
+    <div class="aiCard">
+
+        <p id="aiText">
+
+            This asset has required maintenance multiple times.
+            We recommend cleaning filters every 30 days,
+            checking gas pressure every 90 days,
+            and scheduling preventive inspections monthly.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Buttons -->
+
+<section class="buttons">
+
+    <a href="report.html" class="reportBtn">
+        Report Issue
+    </a>
+
+    <a href="history.html" class="historyBtn">
+        View History
+    </a>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <h2>MaintainIQ</h2>
+
+    <p>
+
+        Smart Asset Maintenance Platform
+
+    </p>
+
+</footer>
+
+<script src="asset.js"></script>
+
+</body>
+</html>

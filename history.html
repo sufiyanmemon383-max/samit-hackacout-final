@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaintainIQ - Maintenance History</title>
+
+    <link rel="stylesheet" href="history.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+
+<header class="header">
+
+    <div class="logo">
+        <h2>MaintainIQ</h2>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="report.html">Report Issue</a>
+
+    </nav>
+
+</header>
+
+<!-- Banner -->
+
+<section class="banner">
+
+    <h1>Maintenance History</h1>
+
+    <p>
+        View all maintenance reports and completed work history.
+    </p>
+
+</section>
+
+<!-- Search -->
+
+<section class="searchBox">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search by asset, title or reporter...">
+
+</section>
+
+<!-- Table -->
+
+<section class="history">
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>#</th>
+
+                <th>Reporter</th>
+
+                <th>Issue</th>
+
+                <th>Description</th>
+
+                <th>Priority</th>
+
+                <th>Status</th>
+
+                <th>Date</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="historyTable">
+
+            <!-- JavaScript Data -->
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- Summary -->
+
+<section class="summary">
+
+    <div class="card">
+
+        <h2 id="totalReports">0</h2>
+
+        <p>Total Reports</p>
+
+    </div>
+
+    <div class="card">
+
+        <h2 id="pendingReports">0</h2>
+
+        <p>Pending</p>
+
+    </div>
+
+    <div class="card">
+
+        <h2 id="completedReports">0</h2>
+
+        <p>Completed</p>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © 2026 MaintainIQ | Smart Maintenance Management
+    </p>
+
+</footer>
+
+<script src="history.js"></script>
+
+</body>
+</html>

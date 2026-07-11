@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generate QR Code</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+
+body{
+    font-family:Poppins,sans-serif;
+    background:#f4f7fc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+input{
+
+    width:320px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin:20px 0;
+
+}
+
+button{
+
+    padding:15px 30px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+
+#qrcode{
+
+    margin-top:30px;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>MaintainIQ QR Generator</h1>
+
+<input
+id="text"
+type="text"
+placeholder="Enter Asset URL">
+
+<br>
+
+<button onclick="generateQR()">
+
+Generate QR
+
+</button>
+
+<div id="qrcode"></div>
+
+</div>
+
+<script>
+
+function generateQR(){
+
+document.getElementById("qrcode").innerHTML="";
+
+new QRCode(document.getElementById("qrcode"),{
+
+text:document.getElementById("text").value,
+
+width:220,
+
+height:220
+
+});
+
+}
+
+</script>
+
+</body>
+</html>

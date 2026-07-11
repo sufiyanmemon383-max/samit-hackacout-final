@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaintainIQ - Report Issue</title>
+
+    <link rel="stylesheet" href="report.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <h2>MaintainIQ</h2>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="history.html">History</a>
+
+    </nav>
+
+</header>
+
+<!-- Asset Information -->
+
+<section class="assetCard">
+
+    <h1>Asset Information</h1>
+
+    <div class="assetDetails">
+
+        <div>
+            <h3>Asset Name</h3>
+            <p>Air Conditioner</p>
+        </div>
+
+        <div>
+            <h3>Asset ID</h3>
+            <p>AC-204</p>
+        </div>
+
+        <div>
+            <h3>Location</h3>
+            <p>2nd Floor</p>
+        </div>
+
+        <div>
+            <h3>Status</h3>
+            <span class="working">Working</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Report Form -->
+
+<section class="reportSection">
+
+    <h1>Report Maintenance Issue</h1>
+
+    <form id="reportForm">
+
+        <div class="inputBox">
+
+            <label>Your Name</label>
+
+            <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required>
+
+        </div>
+
+        <div class="inputBox">
+
+            <label>Issue Title</label>
+
+            <input
+            type="text"
+            id="title"
+            placeholder="Example: AC Not Cooling"
+            required>
+
+        </div>
+
+        <div class="inputBox">
+
+            <label>Description</label>
+
+            <textarea
+            id="description"
+            rows="6"
+            placeholder="Describe the issue..."
+            required></textarea>
+
+        </div>
+
+        <div class="inputBox">
+
+            <label>Priority</label>
+
+            <select id="priority">
+
+                <option>Low</option>
+
+                <option>Medium</option>
+
+                <option>High</option>
+
+                <option>Critical</option>
+
+            </select>
+
+        </div>
+
+        <div class="inputBox">
+
+            <label>Upload Evidence</label>
+
+            <input
+            type="file"
+            id="image"
+            accept="image/*">
+
+        </div>
+
+        <div class="preview">
+
+            <img id="previewImage">
+
+        </div>
+
+        <div class="aiBox">
+
+            <h2>AI Smart Suggestion</h2>
+
+            <p id="suggestion">
+
+                Start typing the issue...
+
+            </p>
+
+        </div>
+
+        <button class="submitBtn">
+
+            Submit Issue
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <h2>MaintainIQ</h2>
+
+    <p>
+        Smart Maintenance Management Platform
+    </p>
+
+</footer>
+
+<script src="report.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaintainIQ Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>MaintainIQ</h2>
+        </div>
+
+        <ul>
+
+            <li class="active">🏠 Dashboard</li>
+
+            <li>📦 Assets</li>
+
+            <li>⚠️ Issues</li>
+
+            <li>👨‍🔧 Technicians</li>
+
+            <li>📜 History</li>
+
+            <li>⚙ Settings</li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main>
+
+        <!-- Top Bar -->
+
+        <header>
+
+            <h1>
+                Dashboard
+            </h1>
+
+            <div class="top-right">
+
+                <input
+                type="text"
+                id="search"
+                placeholder="Search Asset">
+
+                <button id="darkMode">
+                    🌙
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- Cards -->
+
+        <section class="cards">
+
+            <div class="card blue">
+
+                <h3>Total Assets</h3>
+
+                <h1 id="assetCount">
+                    1200
+                </h1>
+
+            </div>
+
+            <div class="card red">
+
+                <h3>Open Issues</h3>
+
+                <h1 id="issueCount">
+                    34
+                </h1>
+
+            </div>
+
+            <div class="card green">
+
+                <h3>Resolved</h3>
+
+                <h1 id="resolvedCount">
+                    980
+                </h1>
+
+            </div>
+
+            <div class="card orange">
+
+                <h3>Technicians</h3>
+
+                <h1>
+                    48
+                </h1>
+
+            </div>
+
+        </section>
+
+        <!-- Add Issue -->
+
+        <section class="addIssue">
+
+            <h2>Report New Issue</h2>
+
+            <form id="issueForm">
+
+                <input
+                type="text"
+                id="asset"
+                placeholder="Asset Name"
+                required>
+
+                <input
+                type="text"
+                id="problem"
+                placeholder="Issue"
+                required>
+
+                <select id="priority">
+
+                    <option>Low</option>
+
+                    <option>Medium</option>
+
+                    <option>High</option>
+
+                    <option>Critical</option>
+
+                </select>
+
+                <select id="technician">
+
+                    <option>Ali</option>
+
+                    <option>Ahmed</option>
+
+                    <option>Usman</option>
+
+                    <option>Hamza</option>
+
+                </select>
+
+                <button>
+                    Add Issue
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Table -->
+
+        <section class="tableSection">
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>Asset</th>
+
+                    <th>Issue</th>
+
+                    <th>Priority</th>
+
+                    <th>Technician</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="tableBody">
+
+                <!-- JavaScript Data -->
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
